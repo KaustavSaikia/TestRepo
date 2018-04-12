@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo Google Test">
+    <listeners>
+        <listener class-name="com.ge.digital.itops.webdriver.BaseTestNGWebDriverListener"/>
+        <listener class-name="com.ge.digital.itops.testng.PDFReporter"/>
+        <listener class-name="com.ge.digital.itops.testng.SkipListener"/>
+    </listeners>
+
+    <!-- <parameter name="reportName" value="Demo Google- Chrome Test Report"/> -->
+    <parameter name="reportDetailLevel" value="127"/>
+    <parameter name="waitTime" value="20"/>
+    <parameter name="url" value="https://www.google.com"/>
+	<parameter name="browser" value="chrome" />
+        
+    <test verbose="1" name="Demo Google - Test" preserve-order="true">
+        <classes>
+            <class name="com.ge.corporate.testing.test.GoogleTest"/>
+        </classes>
+    </test>    
+</suite>
+
+

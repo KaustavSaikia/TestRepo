@@ -1,0 +1,8 @@
+Test Step,Description,Expected,Test Class,Started,Finished,Duration(sec),Status,FailureMessage,Additional Parameters,
+
+TestGoogleHomePage,Verify Google Home Page is displayed,Google Home page should be displayed,GoogleTest,02:45:45 PM,02:45:46 PM,0.1,PASS,,
+TestTerms,Verify Terms Link clickable,Terms page should be displayed,GoogleTest,02:45:46 PM,02:45:52 PM,5.7,PASS,,
+TestGoogleLogoHome,Verify Home icon,Google Home Page should be displayed,GoogleTest,02:45:53 PM,02:45:53 PM,0.0,FAIL,Unable to handle the locator type: GOOGLE_LOGO_HOME_XAPTH Locator name should end with _ID/_NAME/_CLASS/_CSS/_LINK/_PLINK/_TAG/_XPATH,
+TestGoogleHomePage,Verify Google Home Page is displayed,Google Home page should be displayed,GoogleTest,02:45:54 PM,02:45:56 PM,2.1,PASS,,
+TestTerms,Verify Terms Link clickable,Terms page should be displayed,GoogleTest,02:45:57 PM,02:45:58 PM,1.4,PASS,,
+TestGoogleLogoHome,Verify Home icon,Google Home Page should be displayed,GoogleTest,02:45:59 PM,02:45:59 PM,0.0,FAIL,Unable to handle the locator type: GOOGLE_LOGO_HOME_XAPTH Locator name should end with _ID/_NAME/_CLASS/_CSS/_LINK/_PLINK/_TAG/_XPATH,

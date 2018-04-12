@@ -1,0 +1,8 @@
+Test Step,Description,Expected,Test Class,Started,Finished,Duration(sec),Status,FailureMessage,Additional Parameters,
+
+TestGoogleHomePage_1,Verify Google Home Page is displayed,Google Home page should be displayed,RallyGoogleTest,03:47:19 PM,03:47:19 PM,0.1,PASS,,
+TestGoogleTerms_1,Verify Terms Link clickable,Terms page should be displayed,RallyGoogleTest,03:47:24 PM,03:47:34 PM,9.7,FAIL,expected [true] but found [false],
+LaunchGoogleHome,Verify Home,Google Home Page should be displayed,RallyGoogleTest,03:47:44 PM,03:47:45 PM,1.6,PASS,,
+TestGoogleHomePage_1,Verify Google Home Page is displayed,Google Home page should be displayed,RallyGoogleTest,03:47:48 PM,03:47:48 PM,0.1,PASS,,
+TestGoogleTerms_1,Verify Terms Link clickable,Terms page should be displayed,RallyGoogleTest,03:47:51 PM,03:47:53 PM,1.3,FAIL,expected [true] but found [false],
+LaunchGoogleHome,Verify Home,Google Home Page should be displayed,RallyGoogleTest,03:48:01 PM,03:48:02 PM,1.3,PASS,,

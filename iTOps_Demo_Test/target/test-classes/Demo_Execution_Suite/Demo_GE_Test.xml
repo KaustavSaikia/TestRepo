@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo GE Test">
+    <listeners>
+        <listener class-name="com.ge.capital.rainbow.webdriver.BaseTestNGWebDriverListener"/>
+        <listener class-name="com.ge.capital.rainbow.testng.PDFReporter"/>
+        <listener class-name="com.ge.capital.rainbow.testng.SkipListener"/>
+    </listeners>
+
+    <parameter name="reportName" value="Demo GE- Test Report"/>
+    <parameter name="reportDetailLevel" value="127"/>
+    <parameter name="waitTime" value="20"/>
+    <parameter name="url" value="https://www.ge.com"/>
+    <parameter name="browser" value="chrome" />
+
+    <test verbose="1" name="Demo GE - Test" preserve-order="true">
+    	<parameter name="searchtext" value="Turbine" />
+        <classes>
+            <class name="com.ge.corporate.testing.test.GESampleTest"/>
+        </classes>
+    </test>    
+</suite>

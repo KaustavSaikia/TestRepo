@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo Google Test">
+    <listeners>
+        <listener class-name="com.ge.digital.itops.webdriver.BaseTestNGWebDriverListener"/>
+        <listener class-name="com.ge.digital.itops.testng.PDFReporter"/>
+        <listener class-name="com.ge.digital.itops.testng.SkipListener"/>
+    </listeners>
+
+    <parameter name="reportName" value="Demo Google Rally Test- Test Report"/>
+    <parameter name="reportDetailLevel" value="127"/>
+    <parameter name="waitTime" value="20"/>
+    <parameter name="url" value="https://www.google.com"/>
+    <parameter name="browser" value="chrome" />
+
+    <!-- Rally Details -->
+    <parameter name="createDefect" value="N" /> 
+    <parameter name="rallyUserEmailID" value="kaustav.saikia@ge.com" />
+    <parameter name="rallyAPIkey" value="_ODJWvAP1TgC8zDADdy4jnPRPi3JFhk9tg4H2oez2eic" />
+    <parameter name="rallyProxy" value="http://PITC-Zscaler-ASPAC-Bangalore3PR.proxy.corporate.ge.com:80" />
+    <parameter name="rallyWorkspace" value="DevSpark" />
+    <parameter name="rallyProject" value="IProDIGE" />    
+    <parameter name="rallyProjectId" value="iTOps_Autom_001" />
+    <parameter name="rallyDefectAttachment" value="Y" />
+        
+    <test verbose="1" name="Demo Google - Test" preserve-order="true">
+        <classes>
+            <class name="com.ge.corporate.testing.test.RallyGoogleTest"/>
+        </classes>
+    </test>    
+
+    <test verbose="1" name="Demo Google 2- Test" preserve-order="true">
+        <classes>
+            <class name="com.ge.corporate.testing.test.RallyGoogleTest"/>
+        </classes>
+    </test>
+    
+</suite>
